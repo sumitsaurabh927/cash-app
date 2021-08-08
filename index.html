@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Manager App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">Cash Register App</div>
+        <label for="Bill">Bill Amount</label>
+        <br>
+        <input type="number" name="Bill Amount" id="bill">
+        <br>
+        <button class="billButton">Enter amount</button>
+        <br>
+        <p class="errorOne"></p>
+
+        <div class="hidden">
+            <div class="cash">
+                <label for="cash">Cash Amount</label>
+                <br>
+                <input type="number" name="Cash Amount" id="cash">
+                <br>
+                <p class="errorTwo"></p>
+                <img src="https://media.giphy.com/media/12o0tOMUPNozPG/giphy.gif" alt="Doing Dishes" id="doingDishes">
+                <br>
+                <button class="cashButton">Calculate</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <table class="calculation">
+                <tr>
+                    <th class="tableHeader">No. of notes</th>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                    <td class="notesNum"></td>
+                </tr>
+                <tr>
+                    <th class="tableHeader">Notes:</th>
+                    <td class="notes">2000</td>
+                    <td class="notes">500</td>
+                    <td class="notes">100</td>
+                    <td class="notes">50</td>
+                    <td class="notes">20</td>
+                    <td class="notes">10</td>
+                    <td class="notes">5</td>
+                    <td class="notes">1</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+<script src="./app.js"></script>
+
+</html>
