@@ -8,6 +8,8 @@ toBeShown.style.display="none"
 var firstError=document.querySelector(".errorOne")
 var hidden=document.querySelector(".hidden")
 hidden.style.display="none"
+var gif=document.querySelector("#doingDishes")
+gif.style.display="none"
 
 showButton.addEventListener("click",()=>{
     // console.log(bill.value)
