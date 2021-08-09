@@ -24,37 +24,32 @@ showButton.addEventListener("click", () => {
 
 var calculateButton = document.querySelector(".cashButton")
 var secondError = document.querySelector(".errorTwo")
-var table=document.querySelector(".calculation")
-table.style.display="none"
-var notesInList=document.querySelectorAll(".notesNum")
+var table = document.querySelector(".calculation")
+table.style.display = "none"
+var notesInList = document.querySelectorAll(".notesNum")
 
 calculateButton.addEventListener("click", () => {
     var returnAmount = cash.value - bill.value;
     // console.log(returnAmount);
-    if (Number(cash.value) < Number(bill.value)) 
-    {
+    if (Number(cash.value) < Number(bill.value)) {
         secondError.innerText = "Make your customer do this!"
         gif.style.display = "block"
-    } 
-    else if (Number(cash.value) == Number(bill.value)) 
-    {
+    } else if (Number(cash.value) == Number(bill.value)) {
         secondError.innerText = "Bill amount matches cash given.\nNothing to return"
-    } 
-    else(Number(cash.value) > Number(bill.value))
-    {
+    } else(Number(cash.value) > Number(bill.value)) {
         calculate(returnAmount)
-        table.style.display="block"
+        table.style.display = "block"
     }
 })
 
-var denominations=[2000,500,100,50,20,10,5,1]
+var denominations = [2000, 500, 100, 50, 20, 10, 5, 1]
 
-function calculate(returnAmount){
-    for(var i=0;i<denominations.length;i++){
-        var notesNumber=Math.trunc(returnAmount/denominations[i])
-        console.log(notesNumber);
-        returnAmount=returnAmount%denominations[i]
-        notesInList[i].innerText=notesNumber;
+function calculate(returnAmount) {
+    for (var i = 0; i < denominations.length; i++) {
+        var notesNumber = Math.trunc(returnAmount / denominations[i])
+        // console.log(notesNumber);
+        returnAmount = returnAmount % denominations[i]
+        notesInList[i].innerText = notesNumber;
 
     }
 }
