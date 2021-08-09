@@ -39,3 +39,12 @@ calculateButton.addEventListener("click", () => {
         calculation.style.display="block"
     }
 })
+
+var denominations=[2000,500,100,50,20,10,5,1]
+
+function calculate(amount){
+    for(i=0;i<denominations.length;i++){
+        var notesNumber=Math.trunc(amount/denominations[i])
+        console.log(notesNumber);
+    }
+}
