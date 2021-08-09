@@ -36,7 +36,8 @@ calculateButton.addEventListener("click", () => {
         gif.style.display = "block"
     } else if (Number(cash.value) == Number(bill.value)) {
         secondError.innerText = "Bill amount matches cash given.\nNothing to return"
-    } else(Number(cash.value) > Number(bill.value)) {
+    } else(Number(cash.value) > Number(bill.value)) 
+    {
         calculate(returnAmount)
         table.style.display = "block"
     }
